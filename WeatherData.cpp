@@ -33,3 +33,6 @@ void parseWeatherData(const std::string& filename, std::vector<WeatherData>& wea
 	}
 
 	file.close();
+	}
+
+void analyzeWeatherData(const std::vector<WeatherData>& weatherData) {

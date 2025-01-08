@@ -23,3 +23,6 @@ void parseWeatherData(const std::string& filename, std::vector<WeatherData>& wea
 	while (std::getline(file, line)) {
 		std::istringstream stream(line);
 		std::string date;
+		std::string tempStr;
+		if (std::getline(stream, date, ',') && std::getline(stream, tempStr)) {
+			WeatherData data;

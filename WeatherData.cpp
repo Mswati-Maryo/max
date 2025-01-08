@@ -57,3 +57,7 @@ void analyzeWeatherData(const std::vector<WeatherData>& weatherData) {
 			lowestTempDate = data.date;
 		}
 	}
+	
+	double averageTemp = totalTemp / weatherData.size();
+
+	std::cout << "Weather Data Analysis:" << std::endl;

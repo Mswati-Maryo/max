@@ -47,3 +47,6 @@ void analyzeWeatherData(const std::vector<WeatherData>& weatherData) {
 	std::string highestTempDate, lowestTempDate;
 
 	for (const auto& data : weatherData) {
+			totalTemp += data.temperature;
+		if (data.temperature > highestTemp) {
+			highestTemp = data.temperature;

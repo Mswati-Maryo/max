@@ -19,3 +19,7 @@ void parseWeatherData(const std::string& filename, std::vector<WeatherData>& wea
 	
 	std::string line;
 	std::getline(file, line); // Skip the header line
+	
+	while (std::getline(file, line)) {
+		std::istringstream stream(line);
+		std::string date;

@@ -29,3 +29,7 @@ void parseWeatherData(const std::string& filename, std::vector<WeatherData>& wea
 			data.date = date;
 			data.temperature = std::stod(tempStr);
 			weatherData.push_back(data);
+				}
+	}
+
+	file.close();

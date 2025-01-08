@@ -39,3 +39,7 @@ void analyzeWeatherData(const std::vector<WeatherData>& weatherData) {
 	if (weatherData.empty()) {
 		std::cerr << "No weather data available for analysis." << std::endl;
 		return;
+		}
+
+	double totalTemp = 0.0;
+	double highestTemp = std::numeric_limits<double>::lowest();

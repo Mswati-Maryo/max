@@ -36,3 +36,6 @@ void parseWeatherData(const std::string& filename, std::vector<WeatherData>& wea
 	}
 
 void analyzeWeatherData(const std::vector<WeatherData>& weatherData) {
+	if (weatherData.empty()) {
+		std::cerr << "No weather data available for analysis." << std::endl;
+		return;

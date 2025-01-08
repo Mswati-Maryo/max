@@ -16,3 +16,6 @@ void parseWeatherData(const std::string& filename, std::vector<WeatherData>& wea
 	std::cerr << "Error: Could not open the file: " << filename << std::endl;
 		return;
 	}
+	
+	std::string line;
+	std::getline(file, line); // Skip the header line

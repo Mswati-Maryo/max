@@ -71,3 +71,8 @@ int main() {
 		std::string filename = "weather_data.csv";
 	std::vector<WeatherData> weatherData;
 
+	parseWeatherData(filename, weatherData);
+	analyzeWeatherData(weatherData);
+
+	return 0;
+}

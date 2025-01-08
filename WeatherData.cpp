@@ -53,3 +53,7 @@ void analyzeWeatherData(const std::vector<WeatherData>& weatherData) {
 				highestTempDate = data.date;
 		}
 		if (data.temperature < lowestTemp) {
+				lowestTemp = data.temperature;
+			lowestTempDate = data.date;
+		}
+	}

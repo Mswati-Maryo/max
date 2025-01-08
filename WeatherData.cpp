@@ -61,3 +61,6 @@ void analyzeWeatherData(const std::vector<WeatherData>& weatherData) {
 	double averageTemp = totalTemp / weatherData.size();
 
 	std::cout << "Weather Data Analysis:" << std::endl;
+		std::cout << "-----------------------" << std::endl;
+	std::cout << "Average Temperature: " << averageTemp << "°C" << std::endl;
+	std::cout << "Highest Temperature: " << highestTemp << "°C on " << highestTempDate << std::endl;

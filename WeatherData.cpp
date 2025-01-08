@@ -43,3 +43,7 @@ void analyzeWeatherData(const std::vector<WeatherData>& weatherData) {
 
 	double totalTemp = 0.0;
 	double highestTemp = std::numeric_limits<double>::lowest();
+	double lowestTemp = std::numeric_limits<double>::max();
+	std::string highestTempDate, lowestTempDate;
+
+	for (const auto& data : weatherData) {

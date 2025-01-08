@@ -68,3 +68,6 @@ void analyzeWeatherData(const std::vector<WeatherData>& weatherData) {
 }
 
 int main() {
+		std::string filename = "weather_data.csv";
+	std::vector<WeatherData> weatherData;
+

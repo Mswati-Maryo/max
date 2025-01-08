@@ -64,3 +64,7 @@ void analyzeWeatherData(const std::vector<WeatherData>& weatherData) {
 		std::cout << "-----------------------" << std::endl;
 	std::cout << "Average Temperature: " << averageTemp << "°C" << std::endl;
 	std::cout << "Highest Temperature: " << highestTemp << "°C on " << highestTempDate << std::endl;
+		std::cout << "Lowest Temperature: " << lowestTemp << "°C on " << lowestTempDate << std::endl;
+}
+
+int main() {
